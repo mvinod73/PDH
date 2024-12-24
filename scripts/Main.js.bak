@@ -78,8 +78,8 @@ define("PDH/scripts/Main", [
 						 alert("csrfTokenValue 11data "+csrfTokenValue);
 					}
             });
-			partUrl=partUrl+draggedObjId;
-					alert("csrfTokenValue data "+csrfTokenValue);
+					partUrl=partUrl+draggedObjId;
+					alert("partUrl outside data "+partUrl);
 					const securityContextHeader = "SecurityContext";
                     const myHeaders = new Object();
                     myHeaders[csrfTokenName] = csrfTokenValue;

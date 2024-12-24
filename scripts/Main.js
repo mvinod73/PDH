@@ -76,9 +76,7 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						 alert("csrfTokenValue 11data "+csrfTokenValue);
-					}
-            });
-					partUrl=partUrl+draggedObjId;
+						 partUrl=partUrl+draggedObjId;
 					alert("partUrl outside data "+partUrl);
 					const securityContextHeader = "SecurityContext";
                     const myHeaders = new Object();
@@ -108,6 +106,9 @@ define("PDH/scripts/Main", [
                                 "<br>Failed to Upload: " + JSON.stringify(res);
                         },
                     });
+					}
+            });
+					
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");
