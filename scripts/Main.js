@@ -75,6 +75,7 @@ define("PDH/scripts/Main", [
 					onComplete: function (res, headerRes) {
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
+						 alert("csrfTokenValue 11data "+csrfTokenValue);
 					}
             });
 					alert("csrfTokenValue data "+csrfTokenValue);

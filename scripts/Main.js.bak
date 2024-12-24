@@ -84,7 +84,7 @@ define("PDH/scripts/Main", [
                     myHeaders[securityContextHeader] = myWidget.ctx;
                     myHeaders["Content-Type"] = "application/json";
                     let startTime = Date.now();
-                    WAFData.authenticatedRequest(myWidget.partUrl, {
+                    WAFData.authenticatedRequest(myWidget.partUrl+draggedObjId, {
                         method: "GET",
                         headers: myHeaders,
                         credentials: "include",
