@@ -75,41 +75,24 @@ define("PDH/scripts/Main", [
 					onComplete: function (res, headerRes) {
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
-						 alert("csrfTokenValue 11data "+csrfTokenValue);
-					}
-					alert("csrfTokenValue 12data "+csrfTokenValue);
-            }
-			alert("csrfTokenValue 13data "+csrfTokenValue););
-					partUrl=partUrl+draggedObjId;
-					alert("partUrl outside data "+partUrl);
-					const securityContextHeader = "SecurityContext";
+						alert("csrfTokenValue 11data "+csrfTokenValue);
+						const securityContextHeader = "SecurityContext";
                     const myHeaders = new Object();
                     myHeaders[csrfTokenName] = csrfTokenValue;
                     myHeaders[securityContextHeader] = myWidget.ctx;
                     myHeaders["Content-Type"] = "application/json";
-                    let startTime = Date.now();
-                    WAFData.authenticatedRequest(myWidget.partUrl, {
-                        method: "GET",
+                        WAFData.authenticatedRequest("https://oi000186152-us1-space.3dexperience.3ds.com/enovia/resources/v1/modeler/dslc/changeaction/"+draggedObjId, {
+                        method: "POST",
                         headers: myHeaders,
                         credentials: "include",
-                        data: JSON.stringify(requestBody),
-                        timeout: 1500000000,
+                        timeout: 1500000000000,
                         type: "json",
-                        onComplete: function (res, headerRes) {
-                            let endTime = Date.now();
-                            let elapsedTime = endTime - startTime;
-                            let minuteTaken = elapsedTime / (1000 * 60);
-                            console.log("response", res);
-							alert("csrfTokenValue data "+res);
-                            document.getElementById("status").innerHTML =
-                                "<br><p style='color: red;'>Time Taken(Minutes): " + minuteTaken + "</p><p>Response : " + JSON.stringify(res) + "</p>";
-                        },
-                        onFailure(err, errhead) {
-                            console.log(err);
-                            document.getElementById("status").innerHTML =
-                                "<br>Failed to Upload: " + JSON.stringify(res);
-                        },
-                    });
+                        onComplete: function (finalRes, headerRes) {
+                                                },
+						 alert("finalRes data "+finalRes);
+                                            });
+					}
+            });
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");

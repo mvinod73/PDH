@@ -81,16 +81,7 @@ define("PDH/scripts/Main", [
                     myHeaders[csrfTokenName] = csrfTokenValue;
                     myHeaders[securityContextHeader] = myWidget.ctx;
                     myHeaders["Content-Type"] = "application/json";
-                        WAFData.authenticatedRequest("https://oi000186152-us1-space.3dexperience.3ds.com/enovia/resources/v1/modeler/dslc/changeaction/"+draggedObjId, {
-                        method: "POST",
-                        headers: myHeaders,
-                        credentials: "include",
-                        timeout: 1500000000000,
-                        type: "json",
-                        onComplete: function (finalRes, headerRes) {
-                                                },
-						 alert("finalRes data "+finalRes);
-                                            });
+                      	alert("myHeaders 11data "+myHeaders); 
 					}
             });
 					
