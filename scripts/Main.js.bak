@@ -60,6 +60,7 @@ define("PDH/scripts/Main", [
 				   //alert("Inside Drop Type "+draggedObjType);
 				   //alert("Inside Drop Name "+draggedObjName);
 				   alert("Inside DropId "+draggedObjId);
+				   alert("Inside data "+data);
 				   console.log("----------------data---------",data);
 				   
 				   if(draggedObjType==="Change Action"){
@@ -71,18 +72,6 @@ define("PDH/scripts/Main", [
 					   theDroppedElt.innerHTML = "<iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
 					   
 					   /*widget.body.innerHTML = "<div class='droppableFrame'>Drop Here </div><iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";*/
-				   }
-				   else if(draggedObjType==="MCO"){
-					   alert("object type is MCO............");
-					   
-					   //var iMcoUrl = "https://emr-product-datahub-qa.azurewebsites.net/Dev/mcodetail/";
-					   var fMcoUrl = properties.qamcodetailurl+draggedObjId;
-					   
-					   theDroppedElt.innerHTML = "<iframe src='"+fMcoUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
-					   
-					   /*theDropElt.innerHTML = "<div class='droppableFrame'>Drop Here </div><iframe src='"+fMcoUrl+" title='description' style='width: 100vw; height: 100vh;'></iframe>";*/
-					   
-					   /*widget.body.innerHTML = `<div class="droppableFrame">Drop Here </div><iframe src="https://emr-product-datahub-qa.azurewebsites.net/Dev/mcodetail/1262836MMP03" title="description" style="width: 100vw; height: 100vh;"></iframe>`;*/
 				   }
 				   else {
 					   alert("This functionality is not available for selected type");
