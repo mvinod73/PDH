@@ -60,7 +60,6 @@ define("PDH/scripts/Main", [
 				   //alert("Inside Drop Type "+draggedObjType);
 				   //alert("Inside Drop Name "+draggedObjName);
 				   alert("Inside DropId "+draggedObjId);
-				   alert("Inside data "+data);
 				   console.log("----------------data---------",data);
 				   
 				   if(draggedObjType==="Change Action"){
