@@ -78,14 +78,15 @@ define("PDH/scripts/Main", [
 						 alert("csrfTokenValue 11data "+csrfTokenValue);
 					}
             });
-					alert("csrfTokenValue data "+csrfTokenValue);
+					partUrl=partUrl+draggedObjId;
+					alert("partUrl outside data "+partUrl);
 					const securityContextHeader = "SecurityContext";
                     const myHeaders = new Object();
                     myHeaders[csrfTokenName] = csrfTokenValue;
                     myHeaders[securityContextHeader] = myWidget.ctx;
                     myHeaders["Content-Type"] = "application/json";
                     let startTime = Date.now();
-                    WAFData.authenticatedRequest(myWidget.partUrl+draggedObjId, {
+                    WAFData.authenticatedRequest(myWidget.partUrl, {
                         method: "GET",
                         headers: myHeaders,
                         credentials: "include",
