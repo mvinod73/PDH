@@ -76,11 +76,11 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+csrfTokenValue);
-						const securityContextHeader = "SecurityContext";
+						/* const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
-						/* myHeaders[csrfTokenName] = csrfTokenValue;
+						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
-						myHeaders["Content-Type"] = "application/json"; */
+						myHeaders["Content-Type"] = "application/json";
 						alert("myHeaders myHeaders "+myHeaders);
 						var changeActionUrl = caUrl + draggedObjId;
 						alert("changeActionUrl 11data "+changeActionUrl);
@@ -91,9 +91,12 @@ define("PDH/scripts/Main", [
 						onComplete: function (response, headerResponse) {
 							alert("response 11data "+response);
 						}
-						});							
+						});	 */	
+alert("csrfTokenValue 12data "+csrfTokenValue);						
 						}
+						alert("csrfTokenValue 13data "+csrfTokenValue);
             });
+			alert("csrfTokenValue 14data "+csrfTokenValue);
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");
