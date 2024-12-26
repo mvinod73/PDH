@@ -16,7 +16,7 @@ define("PDH/scripts/Main", [
 
         var myWidget = {
 			ctx: "VPLMProjectLeader.0000000001.Micro Motion",
-        partUrl:
+        caUrl:
             "https://oi000186152-us1-space.3dexperience.3ds.com/enovia/resources/v1/modeler/dslc/changeaction/",
         csrfURL:
             "https://oi000186152-us1-space.3dexperience.3ds.com/enovia/resources/v1/application/CSRF?tenant=OI000186152",
@@ -81,7 +81,8 @@ define("PDH/scripts/Main", [
                     myHeaders[csrfTokenName] = csrfTokenValue;
                     myHeaders[securityContextHeader] = myWidget.ctx;
                     myHeaders["Content-Type"] = "application/json";
-                      	alert("myHeaders 11data "+myHeaders); 
+					var changeActionUrl = caUrl + draggedObjId;
+                      	alert("changeActionUrl 11data "+changeActionUrl); 
 					}
             });
 					
