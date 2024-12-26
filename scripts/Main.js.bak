@@ -90,8 +90,8 @@ define("PDH/scripts/Main", [
 						method: "Get",
 						timeout: 150000,
 						type: "json",
-						onComplete: function (res, headerRes) {
-							alert("response 11data "+res);
+						onComplete: function (finalres, headerResponse) {
+							alert("response 11data "+finalres.data);
 						}
 						});		
 alert("csrfTokenValue data "+csrfTokenValue);						
