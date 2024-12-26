@@ -81,6 +81,7 @@ define("PDH/scripts/Main", [
 						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
 						myHeaders["Content-Type"] = "application/json";
+						alert("myHeaders myHeaders "+myHeaders);
 						var changeActionUrl = caUrl + draggedObjId;
 						alert("changeActionUrl 11data "+changeActionUrl);
 						WAFData.authenticatedRequest(changeActionUrl, {
