@@ -81,7 +81,8 @@ define("PDH/scripts/Main", [
 						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
 						myHeaders["Content-Type"] = "application/json";
-						alert("myHeaders myHeaders "+myHeaders);
+						console.log(myWidget.ctx);
+						alert("myHeaders myHeaders "+myWidget.ctx);
 						alert("myHeaders myHeaders "+myWidget.caUrl);
 						alert("myHeaders myHeaders "+draggedObjId);
 						var changeActionUrl = myWidget.caUrl + draggedObjId;
