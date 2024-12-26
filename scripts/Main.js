@@ -77,13 +77,21 @@ define("PDH/scripts/Main", [
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+csrfTokenValue);
 						const securityContextHeader = "SecurityContext";
-                    const myHeaders = new Object();
-                    myHeaders[csrfTokenName] = csrfTokenValue;
-                    myHeaders[securityContextHeader] = myWidget.ctx;
-                    myHeaders["Content-Type"] = "application/json";
-					var changeActionUrl = caUrl + draggedObjId;
-                      	alert("changeActionUrl 11data "+changeActionUrl); 
-					}
+						const myHeaders = new Object();
+						myHeaders[csrfTokenName] = csrfTokenValue;
+						myHeaders[securityContextHeader] = myWidget.ctx;
+						myHeaders["Content-Type"] = "application/json";
+						var changeActionUrl = caUrl + draggedObjId;
+						alert("changeActionUrl 11data "+changeActionUrl);
+						WAFData.authenticatedRequest(changeActionUrl, {
+						method: "Get",
+						timeout: 150000,
+						type: "json",
+						onComplete: function (response, headerResponse) {
+							alert("response 11data "+response);
+						}
+						});							
+						}
             });
 					
 				   if(draggedObjType==="Change Action"){
