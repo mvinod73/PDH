@@ -91,6 +91,7 @@ define("PDH/scripts/Main", [
 						timeout: 150000,
 						type: "json",
 						onComplete: function (finalres, headerResponse) {
+							alert("csrfTokenValue data "+csrfTokenValue);
 							alert("response 11data "+finalres.data);
 							/* var fetchedData = finalres.data;
 							alert("Fetched Data: " + JSON.stringify(fetchedData)); */
