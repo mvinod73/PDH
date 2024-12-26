@@ -92,8 +92,8 @@ define("PDH/scripts/Main", [
 						type: "json",
 						alert("changeActionUrl data "+changeActionUrl);
 						onComplete: function (finalres, headerResponse) {
-							var fetchedData = finalres.data;
-							alert("Fetched Data: " + JSON.stringify(fetchedData));
+							//var fetchedData = finalres.data;
+							//alert("Fetched Data: " + JSON.stringify(fetchedData));
 						}
 						});								
 						}
