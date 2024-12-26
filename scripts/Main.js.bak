@@ -75,7 +75,7 @@ define("PDH/scripts/Main", [
 					onComplete: function (res, headerRes) {
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
-						alert("csrfTokenValue 11data "+res);
+						alert("csrfTokenValue 11data "+csrfTokenName);
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
