@@ -91,12 +91,10 @@ define("PDH/scripts/Main", [
 						onComplete: function (response, headerResponse) {
 							alert("response 11data "+response);
 						}
-						});	 */	
-alert("csrfTokenValue 12data "+csrfTokenValue);						
+						}); */		
+alert("csrfTokenValue data "+csrfTokenValue);						
 						}
-						alert("csrfTokenValue 13data "+csrfTokenValue);
             });
-			alert("csrfTokenValue 14data "+csrfTokenValue);
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");

@@ -78,9 +78,9 @@ define("PDH/scripts/Main", [
 						alert("csrfTokenValue 11data "+csrfTokenValue);
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
-						/* myHeaders[csrfTokenName] = csrfTokenValue;
+						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
-						myHeaders["Content-Type"] = "application/json"; */
+						myHeaders["Content-Type"] = "application/json";
 						alert("myHeaders myHeaders "+myHeaders);
 						var changeActionUrl = caUrl + draggedObjId;
 						alert("changeActionUrl 11data "+changeActionUrl);
