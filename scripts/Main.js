@@ -92,8 +92,8 @@ define("PDH/scripts/Main", [
 						type: "json",
 						alert("changeActionUrl data "+changeActionUrl);
 						onComplete: function (finalres, headerResponse) {
-							var fetchedData = finalres.data;
-							alert("Fetched Data: " + JSON.stringify(fetchedData));
+							//var fetchedData = finalres.data;
+							//alert("Fetched Data: " + JSON.stringify(fetchedData));
 						}
 						});								
 						}
@@ -105,7 +105,7 @@ define("PDH/scripts/Main", [
 					   //var iUrl = "https://emr-product-datahub-dev.azurewebsites.net/Dev/mcolist/";
 					   //var fUrl = properties.devcaurl+draggedObjId;
 					   
-					   //theDroppedElt.innerHTML = "<iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
+					   theDroppedElt.innerHTML = "<iframe src='"+"Test"+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
 					   
 					   /*widget.body.innerHTML = "<div class='droppableFrame'>Drop Here </div><iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";*/
 				   }
