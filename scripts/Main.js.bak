@@ -95,7 +95,7 @@ alert("csrfTokenValue data "+csrfTokenValue);
 						timeout: 150000,
 						type: "json",
 						onComplete: function (finalres, headerResponse) {
-							alert("response 11data "+finalres.data);
+							alert("final response data "+finalres.data);
 							/* var fetchedData = finalres.data;
 							alert("Fetched Data: " + JSON.stringify(fetchedData)); */
 						}
