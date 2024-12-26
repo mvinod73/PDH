@@ -90,11 +90,11 @@ define("PDH/scripts/Main", [
 						method: "Get",
 						timeout: 150000,
 						type: "json",
+						alert("changeActionUrl data "+changeActionUrl);
 						onComplete: function (finalres, headerResponse) {
 							alert("response 11data "+finalres.data);
 						}
-						});		
-alert("csrfTokenValue data "+csrfTokenValue);						
+						});								
 						}
             });
 					
