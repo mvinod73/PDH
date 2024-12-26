@@ -82,9 +82,9 @@ define("PDH/scripts/Main", [
 						myHeaders[securityContextHeader] = myWidget.ctx;
 						myHeaders["Content-Type"] = "application/json";
 						alert("myHeaders myHeaders "+myHeaders);
-						alert("myHeaders myHeaders "+caUrl);
+						alert("myHeaders myHeaders "+myWidget.caUrl);
 						alert("myHeaders myHeaders "+draggedObjId);
-						var changeActionUrl = caUrl + draggedObjId;
+						var changeActionUrl = myWidget.caUrl + draggedObjId;
 						alert("changeActionUrl 11data "+changeActionUrl);
 						WAFData.authenticatedRequest(changeActionUrl, {
 						method: "Get",
