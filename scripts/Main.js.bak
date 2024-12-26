@@ -76,7 +76,7 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+csrfTokenValue);
-						/* const securityContextHeader = "SecurityContext";
+						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
@@ -91,7 +91,7 @@ define("PDH/scripts/Main", [
 						onComplete: function (response, headerResponse) {
 							alert("response 11data "+response);
 						}
-						}); */		
+						});		
 alert("csrfTokenValue data "+csrfTokenValue);						
 						}
             });
@@ -100,9 +100,9 @@ alert("csrfTokenValue data "+csrfTokenValue);
 					   alert("object type is Change Action............");
 					   
 					   //var iUrl = "https://emr-product-datahub-dev.azurewebsites.net/Dev/mcolist/";
-					   var fUrl = properties.devcaurl+draggedObjId;
+					   //var fUrl = properties.devcaurl+draggedObjId;
 					   
-					   theDroppedElt.innerHTML = "<iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
+					   //theDroppedElt.innerHTML = "<iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
 					   
 					   /*widget.body.innerHTML = "<div class='droppableFrame'>Drop Here </div><iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";*/
 				   }
