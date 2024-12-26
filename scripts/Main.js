@@ -76,6 +76,10 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+res);
+	
+alert("csrfTokenValue data "+csrfTokenValue);						
+						}
+            });
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
@@ -95,10 +99,7 @@ define("PDH/scripts/Main", [
 							/* var fetchedData = finalres.data;
 							alert("Fetched Data: " + JSON.stringify(fetchedData)); */
 						}
-						});		
-alert("csrfTokenValue data "+csrfTokenValue);						
-						}
-            });
+						});	
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");
