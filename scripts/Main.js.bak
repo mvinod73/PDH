@@ -76,10 +76,6 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+res);
-	
-alert("csrfTokenValue data "+csrfTokenValue);						
-						}
-            });
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
@@ -95,11 +91,14 @@ alert("csrfTokenValue data "+csrfTokenValue);
 						timeout: 150000,
 						type: "json",
 						onComplete: function (finalres, headerResponse) {
-							alert("final response data "+finalres.data);
+							alert("response 11data "+finalres.data);
 							/* var fetchedData = finalres.data;
 							alert("Fetched Data: " + JSON.stringify(fetchedData)); */
 						}
-						});	
+						});		
+alert("csrfTokenValue data "+csrfTokenValue);						
+						}
+            });
 					
 				   if(draggedObjType==="Change Action"){
 					   alert("object type is Change Action............");
