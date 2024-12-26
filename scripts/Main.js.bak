@@ -76,7 +76,7 @@ define("PDH/scripts/Main", [
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
 						alert("csrfTokenValue 11data "+csrfTokenValue);
-						const securityContextHeader = "SecurityContext";
+						/* const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
@@ -91,7 +91,8 @@ define("PDH/scripts/Main", [
 						onComplete: function (response, headerResponse) {
 							alert("response 11data "+response);
 						}
-						});							
+						}); */		
+alert("csrfTokenValue data "+csrfTokenValue);						
 						}
             });
 					
