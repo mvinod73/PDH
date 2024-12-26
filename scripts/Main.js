@@ -75,7 +75,7 @@ define("PDH/scripts/Main", [
 					onComplete: function (res, headerRes) {
 						const csrfTokenName = res.csrf.name;
 						const csrfTokenValue = res.csrf.value;
-						alert("csrfTokenValue 11data "+csrfTokenValue);
+						alert("csrfTokenValue 11data "+res);
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
 						myHeaders[csrfTokenName] = csrfTokenValue;
@@ -90,8 +90,8 @@ define("PDH/scripts/Main", [
 						method: "Get",
 						timeout: 150000,
 						type: "json",
-						onComplete: function (response, headerResponse) {
-							alert("response 11data "+response);
+						onComplete: function (res, headerRes) {
+							alert("response 11data "+res);
 						}
 						});		
 alert("csrfTokenValue data "+csrfTokenValue);						
