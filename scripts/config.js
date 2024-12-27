@@ -1,5 +1,5 @@
 const properties = {
-    qamcodetailurl: "https://emr-product-datahub-stage.azurewebsites.net/mcodetail/",	
+    caDetailurl: "https://emr-product-datahub-stage.azurewebsites.net/mcodetail/",	
     devcaurl: "https://emr-product-datahub-stage.azurewebsites.net/mcolist",
     applicationurl : "https://emr-product-datahub-stage.azurewebsites.net/mcolist"
     };
