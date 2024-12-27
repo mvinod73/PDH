@@ -96,7 +96,7 @@ define("PDH/scripts/Main", [
 							alert("csrfTokenValue data "+csrfTokenValue);
 							alert("response 11data "+finalres.data);
 							//var fetchedData = finalres.data;
-							alert("Fetched Data: " + JSON.stringify(finalres)); */
+							alert("Fetched Data: " + JSON.stringify(finalres));
 						}
 						});		
 alert("csrfTokenValue data "+csrfTokenValue);						
