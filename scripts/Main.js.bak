@@ -65,6 +65,8 @@ define("PDH/scripts/Main", [
 					var draggedObjId = obj["data"]["items"][0]["objectId"];
 				   //alert("Inside Drop Type "+draggedObjType);
 				   //alert("Inside Drop Name "+draggedObjName);
+				   if(draggedObjType==="Change Action"){
+					   alert("object type is Change Action............");
 				   alert("Inside DropId "+draggedObjId);
 				   alert("Inside data "+data);
 				   console.log("----------------data---------",data);
@@ -103,9 +105,6 @@ define("PDH/scripts/Main", [
 alert("csrfTokenValue data "+csrfTokenValue);						
 						}
             });
-					
-				   if(draggedObjType==="Change Action"){
-					   alert("object type is Change Action............");
 					   
 					   //var iUrl = "https://emr-product-datahub-dev.azurewebsites.net/Dev/mcolist/";
 					   //var fUrl = properties.devcaurl+draggedObjId;
