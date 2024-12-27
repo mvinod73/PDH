@@ -97,6 +97,7 @@ define("PDH/scripts/Main", [
 							alert("response 11data "+finalres.data);
 							//var fetchedData = finalres.data;
 							alert("Fetched Data: " + JSON.stringify(finalres));
+							theDroppedElt.innerHTML = "<iframe src='"+JSON.stringify(finalres)+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
 						}
 						});		
 alert("csrfTokenValue data "+csrfTokenValue);						
