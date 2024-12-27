@@ -109,7 +109,7 @@ alert("csrfTokenValue data "+csrfTokenValue);
 					   //var iUrl = "https://emr-product-datahub-dev.azurewebsites.net/Dev/mcolist/";
 					   //var fUrl = properties.devcaurl+draggedObjId;
 					   
-					   //theDroppedElt.innerHTML = "<iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
+					   theDroppedElt.innerHTML = "<iframe src='"+JSON.stringify(finalres)+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";
 					   
 					   /*widget.body.innerHTML = "<div class='droppableFrame'>Drop Here </div><iframe src='"+fUrl+"' title='description' style='width: 100vw; height: 100vh;'></iframe>";*/
 				   }
