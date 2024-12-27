@@ -78,8 +78,7 @@ define("PDH/scripts/Main", [
 						alert("csrfTokenValue 11data "+csrfTokenName);
 						const securityContextHeader = "SecurityContext";
 						const myHeaders = new Object();
-						//myHeaders[csrfTokenName] = csrfTokenValue;
-						myHeaders[csrfTokenName] = "DKMK-SUSK-WRV0-DJNK-3LZ0-EU8R-CAOW-P5DC";
+						myHeaders[csrfTokenName] = csrfTokenValue;
 						myHeaders[securityContextHeader] = myWidget.ctx;
 						myHeaders["Content-Type"] = "application/json";
 						console.log(myWidget.ctx);

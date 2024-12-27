@@ -90,6 +90,7 @@ define("PDH/scripts/Main", [
 						WAFData.authenticatedRequest(changeActionUrl, {
 						method: "Get",
 						timeout: 150000,
+						headers: myHeaders,
 						type: "json",
 						onComplete: function (finalres, headerResponse) {
 							alert("csrfTokenValue data "+csrfTokenValue);
